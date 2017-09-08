@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sandbox</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./lib/jquery_lite.js">
+
+    </script>
+  </head>
+  <body>
+
+
+
+    <div class="unique a-section a-padding-medium auth-workflow">
+          <div class="childtest a-section a-spacing-none auth-navbar">
+
+
+
+
+
+
+
+
+
+
+
+          <div class="a-section a-spacing-medium a-text-center">
+
+
+
+          <a class="childtest a-link-nav-icon" tabindex="-1" href="/ref=ap_frn_logo">
+
+
+
+
+
+                <i class="a-icon a-icon-logo" aria-label="Amazon"><span class="a-icon-alt">Amazon</span></i>
+
+
+
+
+
+          </a>
+
+
+    </div>
+
+
+          </div>
+
+
+
+
+
+              <div class="childtest a-section a-spacing-base auth-pagelet-container">
+
+
+
+                    <div id="auth-cookie-warning-message" class="a-box a-alert a-alert-warning"><div class="a-box-inner a-alert-container"><h4 class="a-alert-heading">Please Enable Cookies to Continue</h4><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+                      <p>
+                        <a class="a-link-normal" href="/gp/help/customer/display.html/ref=ap_cookie_error_help?">
+
+                        </a>
+                      </p>
+                    </div></div></div>
+
+
+              </div>
+
+              <div class="a-section auth-pagelet-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Set cross domain sso variables to be used for making Ajax calls to central Identity domain -->
+
+
+    <!-- Set cross domain sso variables to be used for making Ajax calls to central Identity domain -->
+
+
+    <!-- show a warning modal dialog when the third party account is connected with Amazon -->
+
+
+
+
+
+        <div class="a-section a-spacing-base">
+          <div class="a-section">
+
+            <form name="signIn" method="post" novalidate="" action="https://www.amazon.com/ap/signin" class="auth-validate-form auth-real-time-validation a-spacing-none fwcim-form" data-fwcim-id="undefined1063ed33">
+
+
+
+                  <input type="hidden" name="appActionToken" value="UfBSoHjM6kAGJrMAc16JDXCrilMj3D"><input type="hidden" name="appAction" value="SIGNIN">
+
+
+
+
+
+
+
+
+
+
+        <input type="hidden" name="openid.pape.max_auth_age" value="ape:MA==">
+
+        <input type="hidden" name="openid.identity" value="ape:aHR0cDovL3NwZWNzLm9wZW5pZC5uZXQvYXV0aC8yLjAvaWRlbnRpZmllcl9zZWxlY3Q=">
+
+        <input type="hidden" name="pageId" value="ape:dXNmbGV4">
+
+        <input type="hidden" name="ignoreAuthState" value="ape:MQ==">
+
+        <input type="hidden" name="openid.return_to" value="ape:aHR0cHM6Ly93d3cuYW1hem9uLmNvbS8/cmVmXz1uYXZfY3VzdHJlY19zaWduaW4=">
+
+        <input type="hidden" name="prevRID" value="ape:NUNaWkFNN1Q3RUdUVE00Nzg0OUs=">
+
+        <input type="hidden" name="openid.assoc_handle" value="ape:dXNmbGV4">
+
+        <input type="hidden" name="openid.mode" value="ape:Y2hlY2tpZF9zZXR1cA==">
+
+        <input type="hidden" name="openid.ns.pape" value="ape:aHR0cDovL3NwZWNzLm9wZW5pZC5uZXQvZXh0ZW5zaW9ucy9wYXBlLzEuMA==">
+
+        <input type="hidden" name="prepopulatedLoginId">
+
+        <input type="hidden" name="failedSignInCount" value="ape:MA==">
+
+        <input type="hidden" name="openid.claimed_id" value="ape:aHR0cDovL3NwZWNzLm9wZW5pZC5uZXQvYXV0aC8yLjAvaWRlbnRpZmllcl9zZWxlY3Q=">
+
+        <input type="hidden" name="openid.ns" value="ape:aHR0cDovL3NwZWNzLm9wZW5pZC5uZXQvYXV0aC8yLjA=">
+
+
+
+
+              <div class="a-section">
+                <div class="a-box"><div class="a-box-inner a-padding-extra-large">
+                  <h1 class="a-spacing-small">
+                    Sign in
+                  </h1>
+                  <!-- optional subheading element -->
+
+                  <div class="a-row a-spacing-base">
+                    <label for="ap_email" class="a-form-label">
+                      Email (phone for mobile accounts)
+                    </label>
+
+
+
+
+
+
+
+                    <input type="email" maxlength="128" id="ap_email" name="email" tabindex="1" class="a-input-text a-span12 auth-autofocus auth-required-field">
+
+
+
+
+    <div id="auth-email-missing-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-none a-spacing-top-mini"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+      Enter your email or mobile phone number
+    </div></div></div>
+
+                  </div>
+
+
+                  <input type="hidden" name="create" value="0">
+
+
+
+
+
+
+
+
+    <div class="a-section a-spacing-large">
+      <div class="a-row">
+        <div class="a-column a-span5">
+          <label for="ap_password" class="a-form-label">
+            Password
+          </label>
+        </div>
+
+
+
+          <div class="a-column a-span7 a-text-right a-span-last">
+
+
+
+
+
+
+
+
+
+
+    <a id="auth-fpp-link-bottom" class="a-link-normal" href="https://www.amazon.com/ap/forgotpassword?openid.pape.max_auth_age=0&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;pageId=usflex&amp;ignoreAuthState=1&amp;openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&amp;prevRID=5CZZAM7T7EGTTM47849K&amp;openid.assoc_handle=usflex&amp;openid.mode=checkid_setup&amp;openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&amp;prepopulatedLoginId=&amp;failedSignInCount=0&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">
+      Forgot your password?
+    </a>
+          </div>
+
+      </div>
+
+
+
+
+
+
+
+      <input type="password" id="ap_password" name="password" tabindex="2" class="a-input-text a-span12 auth-required-field">
+
+
+
+
+
+
+    <div id="auth-password-missing-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-none a-spacing-top-mini"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+      Enter your password
+    </div></div></div>
+
+
+    </div>
+
+
+                  <div class="a-section a-spacing-extra-large">
+
+
+
+
+
+
+
+
+
+
+
+
+                    <span class="a-button a-button-span12 a-button-primary" id="a-autoid-0"><span class="a-button-inner"><input id="signInSubmit" tabindex="5" class="a-button-input" type="submit" aria-labelledby="a-autoid-0-announce"><span class="a-button-text" aria-hidden="true" id="a-autoid-0-announce">
+                      Sign in
+                    </span></span></span>
+
+
+    <script>
+      function cf() {
+        if (typeof window.uet === 'function') {
+          uet('cf');
+        }
+        if (window.embedNotification &&
+          typeof window.embedNotification.onCF === 'function') {
+          embedNotification.onCF();
+        }
+      }
+    </script>
+
+    <script type="text/javascript">cf()</script>
+
+
+
+
+
+
+
+
+      <div class="a-row a-spacing-top-medium">
+        <div class="a-section a-text-left">
+          <label for="auth-remember-me" class="a-form-label">
+            <div data-a-input-name="rememberMe" class="a-checkbox"><label><input type="checkbox" name="rememberMe" value="true" tabindex="4"><i class="a-icon a-icon-checkbox"></i><span class="a-label a-checkbox-label">
+              Keep me signed in.
+              <span class="a-declarative" data-action="a-popover" data-a-popover="{&quot;activate&quot;:&quot;onclick&quot;,&quot;header&quot;:&quot;\&quot;Keep Me Signed In\&quot; Checkbox&quot;,&quot;inlineContent&quot;:&quot;<p>Choosing \&quot;Keep me signed in\&quot; reduces the number of times you're asked to sign in on this device.<\/p>\n<p>To keep your account secure, use this option only on your personal devices.<\/p>&quot;}">
+                <a id="remember_me_learn_more_link" href="javascript:void(0)" class="a-popover-trigger a-declarative">
+                  Details
+                <i class="a-icon a-icon-popover"></i></a>
+              </span>
+            </span></label></div>
+          </label>
+        </div>
+      </div>
+
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="a-divider a-divider-break"><h5>New to Amazon?</h5></div>
+                        <span id="auth-create-account-link" class="a-button a-button-span12"><span class="a-button-inner"><a id="createAccountSubmit" tabindex="6" href="https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;pageId=usflex&amp;ignoreAuthState=1&amp;openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&amp;prevRID=5CZZAM7T7EGTTM47849K&amp;openid.assoc_handle=usflex&amp;openid.mode=checkid_setup&amp;openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&amp;prepopulatedLoginId=&amp;failedSignInCount=0&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" class="a-button-text" role="button">
+                          Create your Amazon account
+                        </a></span></span>
+
+
+
+
+
+
+
+
+                </div></div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+              </div>
+
+
+
+          <div id="right-2">
+          </div>
+
+          <div class="a-section a-spacing-top-extra-large">
+
+
+
+
+
+    <div class="a-divider a-divider-section"><div class="a-divider-inner"></div></div>
+    <div class="a-section a-spacing-small a-text-center a-size-mini">
+      <span class="auth-footer-seperator"></span>
+
+
+
+
+
+
+
+
+
+        <a class="a-link-normal" target="_blank" rel="noopener" href="/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&amp;nodeId=508088">
+          Conditions of Use
+        </a>
+        <span class="auth-footer-seperator"></span>
+
+
+
+
+
+
+
+
+        <a class="a-link-normal" target="_blank" rel="noopener" href="/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&amp;nodeId=468496">
+          Privacy Notice
+        </a>
+        <span class="auth-footer-seperator"></span>
+
+
+
+
+
+
+
+
+        <a class="a-link-normal" target="_blank" rel="noopener" href="/help">
+          Help
+        </a>
+        <span class="auth-footer-seperator"></span>
+
+    </div>
+
+    <div class="a-section a-spacing-none a-text-center">
+      <span class="a-size-mini a-color-secondary">
+        © 1996-2017, Amazon.com, Inc. or its affiliates
+      </span>
+    </div>
+
+          </div>
+        </div>
+  </body>
+</html>
